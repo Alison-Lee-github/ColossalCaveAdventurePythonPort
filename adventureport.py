@@ -142,6 +142,29 @@ def read_description(description_array,value): #read description based on value
        #index=index+1
     print(description_string)
 
+def set_intial_object_locations():
+    object_location_array=[0]*79 # 79 rooms, really 68, but make 79 anyway
+    room_3=[1001,1002,1020] #key,lamp, bottle of water
+    object_location_array[2]=room_3
+    
+    room_8=[1003] #grate not takeable
+    object_location_array[7]=room_8
+    
+    room_10=[1004] #cage
+    object_location_array[9]=room_10
+    
+    room_13=[1007] #bird cannot capture without rod
+    object_location[12]=room_13
+    
+    room_27=[1013] #diamonds
+    object_location[26]=room_27
+    
+    room_18=[1010] # gold in gold room
+    object_location[17]=room_18
+    
+    room_39=[1015] # jewels in south side chamber
+    object_location[38]=room_39
+    
         
 #parse_room_number(2,parse_map(parse_data(182)))
 game_map=get_map_data() # intializing game state
